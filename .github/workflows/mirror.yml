@@ -1,11 +1,11 @@
-name: 'mirror'
+name: "mirror"
 on:
   push:
     branches:
-        - __mirror
+      - __mirror
   schedule:
     # Run everyday at 3 AM UTC
-    - cron: '0 3 * * *'
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,5 +17,5 @@ jobs:
         id: mirror
         uses: bridgelightcloud/github-mirror-action@v3
         with:
-          origin: ''
+          origin: Women-Coding-Community/wcc-frontend.git"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
