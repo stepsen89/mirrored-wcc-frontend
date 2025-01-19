@@ -17,5 +17,5 @@ jobs:
         id: mirror
         uses: bridgelightcloud/github-mirror-action@v3
         with:
-          origin: "Women-Coding-Community/wcc-frontend.git"
+          origin: "git@github.com:Women-Coding-Community/wcc-frontend.git"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
